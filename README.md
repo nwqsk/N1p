@@ -1,4 +1,4 @@
-# WexPass
+# noMathErrors
 
 Authors:
 Description:
