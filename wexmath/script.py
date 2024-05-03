@@ -110,8 +110,17 @@ def number(symbol, a=0):
                 ct = p_task
                 n_task = ct
             else:
-                c = 1
+                c = 52
+                
+                values = []
+                for n in range(1, 100):
+                    if a%n == 0:
+                        values.append(n)
+
+                i = randint(0, len(values) - 1)
+                c = values[i]
                 ct = str(c)
+        
                 n_task = ct
     else:
         if a == 0:
@@ -128,8 +137,17 @@ def number(symbol, a=0):
                 c = randint(1, 10)
                 n_task = str(c)
             else:
-                c = 1
+                c = 52
+                
+                values = []
+                for n in range(1, 100):
+                    if a%n == 0:
+                        values.append(n)
+
+                i = randint(0, len(values) - 1)
+                c = values[i]
                 ct = str(c)
+        
                 n_task = ct
     return c
 
